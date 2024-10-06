@@ -1,0 +1,48 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.8.4",
+  "deps": {
+    "nx": "19.8.4"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "build-a-app": [
+        {
+          "file": ".idea/.gitignore",
+          "hash": "7651118417904998994"
+        },
+        {
+          "file": ".idea/build-a-app.iml",
+          "hash": "2091662290190038625"
+        },
+        {
+          "file": ".idea/modules.xml",
+          "hash": "4555960845079480683"
+        },
+        {
+          "file": ".idea/vcs.xml",
+          "hash": "14600148892634157659"
+        },
+        {
+          "file": "LICENSE",
+          "hash": "12035847157099154420"
+        },
+        {
+          "file": "README.md",
+          "hash": "18146654232542622237"
+        },
+        {
+          "file": "nx.json",
+          "hash": "7672323410656081935"
+        },
+        {
+          "file": "package.json",
+          "hash": "4895041837327434450"
+        }
+      ]
+    },
+    "nonProjectFiles": []
+  }
+}

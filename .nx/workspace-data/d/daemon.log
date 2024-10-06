@@ -1,0 +1,11 @@
+[NX Daemon Server] - 2024-10-06T03:38:55.966Z - Started listening on: /var/folders/x5/4k5zptlj5210pnw395vl_cg80000gn/T/4d8720fdbea9943aced6/d.sock
+[NX Daemon Server] - 2024-10-06T03:38:55.967Z - [WATCHER]: Subscribed to changes within: /Users/heronnavarro/dev/personal/build-a-app (native)
+[NX Daemon Server] - 2024-10-06T03:38:55.976Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-06T03:38:55.976Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-10-06T03:38:55.977Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-10-06T03:38:55.977Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-10-06T03:38:55.978Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-10-06T03:38:55.978Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-10-06T03:38:55.979Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-10-06T03:38:55.979Z - [WATCHER]: Stopping the watcher for /Users/heronnavarro/dev/personal/build-a-app (sources)
+[NX Daemon Server] - 2024-10-06T03:38:55.979Z - [WATCHER]: Stopping the watcher for /Users/heronnavarro/dev/personal/build-a-app (outputs)

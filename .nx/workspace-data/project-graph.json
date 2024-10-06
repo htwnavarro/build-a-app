@@ -1,0 +1,83 @@
+{
+  "nodes": {
+    "build-a-app": {
+      "name": "build-a-app",
+      "type": "lib",
+      "data": {
+        "root": ".",
+        "sourceRoot": ".",
+        "name": "build-a-app",
+        "tags": [
+          "npm:public",
+          "npm:monorepo"
+        ],
+        "metadata": {
+          "targetGroups": {
+            "NPM Scripts": [
+              "build",
+              "lint",
+              "test"
+            ]
+          },
+          "description": "Monorepo, distributed app. Goal is to be able to go 0-60 in a new environment. Build infra, seed data, spinup a UI."
+        },
+        "targets": {
+          "build": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build"
+            },
+            "metadata": {
+              "scriptContent": "next build",
+              "runCommand": "npm run build"
+            },
+            "configurations": {},
+            "parallelism": true,
+            "cache": true
+          },
+          "lint": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "lint"
+            },
+            "metadata": {
+              "scriptContent": "eslint ./src",
+              "runCommand": "npm run lint"
+            },
+            "configurations": {},
+            "parallelism": true,
+            "cache": true
+          },
+          "test": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "test"
+            },
+            "metadata": {
+              "scriptContent": "node ./run-tests.js",
+              "runCommand": "npm run test"
+            },
+            "configurations": {},
+            "parallelism": true,
+            "cache": true
+          },
+          "nx-release-publish": {
+            "executor": "@nx/js:release-publish",
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "options": {},
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "implicitDependencies": []
+      }
+    }
+  },
+  "externalNodes": {},
+  "dependencies": {
+    "build-a-app": []
+  },
+  "version": "6.0"
+}

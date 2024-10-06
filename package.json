@@ -1,0 +1,28 @@
+{
+  "name": "build-a-app",
+  "version": "0.0.0",
+  "description": "Monorepo, distributed app. Goal is to be able to go 0-60 in a new environment. Build infra, seed data, spinup a UI.",
+  "main": "index.js",
+  "scripts": {
+    "build": "next build",
+    "lint": "eslint ./src",
+    "test": "node ./run-tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htwnavarro/build-a-app.git"
+  },
+  "keywords": [
+    "monorepo"
+  ],
+  "author": "Heron Wu-Navarro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/htwnavarro/build-a-app/issues"
+  },
+  "homepage": "https://github.com/htwnavarro/build-a-app#readme",
+  "devDependencies": {
+    "nx": "19.8.4"
+  },
+  "nx": {}
+}
