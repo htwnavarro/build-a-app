@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-
-import Resume from '../Resume/Resume';
+import Htwn from './htwn';
 
 const StyledApp = styled.div`
     // Your style here
@@ -9,7 +8,7 @@ const StyledApp = styled.div`
 export function App() {
     return (
         <StyledApp>
-            <Resume />
+            <Htwn />
         </StyledApp>
     );
 }
