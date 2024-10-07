@@ -1,9 +1,9 @@
 {
-  "name": "build-a-app",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/build-a-app/src",
-  "projectType": "application",
-  "tags": [],
-  "// targets": "to see all targets run: nx show project build-a-app --web",
-  "targets": {}
+    "name": "build-a-app",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "apps/build-a-app/src",
+    "projectType": "application",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project build-a-app --web",
+    "targets": {}
 }

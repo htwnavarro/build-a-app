@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
-import NxWelcome from './nx-welcome';
+import Resume from '../Resume/Resume';
 
 const StyledApp = styled.div`
-  // Your style here
+    // Your style here
 `;
 
 export function App() {
-  return (
-    <StyledApp>
-      <NxWelcome title="build-a-app" />
-    </StyledApp>
-  );
+    return (
+        <StyledApp>
+            <Resume />
+        </StyledApp>
+    );
 }
 
 export default App;
