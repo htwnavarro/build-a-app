@@ -1,7 +1,6 @@
 const { composePlugins, withNx, withWeb } = require('@nx/webpack');
 const { withReact } = require('@nx/react');
 const { runWebpackDevServer } = require('@nx/webpack/src/utils/run-webpack');
-const path = require('node:path');
 
 const pluginOption = {
     index: 'apps/build-a-app/src/index.html',
