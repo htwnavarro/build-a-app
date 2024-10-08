@@ -1,20 +1,47 @@
 // some of the bootstrap variables and such need to be mounted in the rootspace
 @import "../../../../node_modules/bootstrap/scss/functions";
 @import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/variables-dark";
 @import "../../../../node_modules/bootstrap/scss/maps";
 @import "../../../../node_modules/bootstrap/scss/mixins";
 @import "../../../../node_modules/bootstrap/scss/root";
+@import "../../../../node_modules/bootstrap/scss/utilities";
+
+$utilities: map-merge(
+    $utilities,
+    (
+      "viewport-height": (
+        property: height,
+        class: vh,
+        values: (80: 80vh, 100: 100vh)
+      )
+    )
+);
+
+@import "../../../../node_modules/bootstrap/scss/utilities/api";
+
 
 // within a bootstrap selector scope, mount the bootstrap styling
 .bootstrap {
+  font-family: var(--#{$prefix}body-font-family);
+  @include font-size(var(--#{$prefix}body-font-size));
+  font-weight: var(--#{$prefix}body-font-weight);
+  line-height: var(--#{$prefix}body-line-height);
+  color: var(--#{$prefix}body-color);
+  text-align: var(--#{$prefix}body-text-align);
+  background-color: var(--#{$prefix}body-bg); // 2
+  -webkit-text-size-adjust: 100%; // 3
+  -webkit-tap-highlight-color: rgba($black, 0); // 4
+
   @import "../../../../node_modules/bootstrap/scss/reboot";
   @import "../../../../node_modules/bootstrap/scss/helpers";
-  @import "../../../../node_modules/bootstrap/scss/utilities";
   @import "../../../../node_modules/bootstrap/scss/containers";
+  @import "../../../../node_modules/bootstrap/scss/type";
   @import "../../../../node_modules/bootstrap/scss/grid";
   @import "../../../../node_modules/bootstrap/scss/images";
   @import "../../../../node_modules/bootstrap/scss/reboot";
-  @import "../../../../node_modules/bootstrap/scss/type";
+  @import "../../../../node_modules/bootstrap/scss/nav";
+  @import "../../../../node_modules/bootstrap/scss/navbar";
   @import "../../../../node_modules/bootstrap/scss/forms";
   @import "../../../../node_modules/bootstrap/scss/buttons";
 }
