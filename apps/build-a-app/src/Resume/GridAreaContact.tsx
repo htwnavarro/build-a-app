@@ -2,15 +2,19 @@ import styled from 'styled-components';
 import { GridArea } from './Grid';
 import React from 'react';
 import { SectionHeading } from './Resume';
-import { COLOR_TEXT_SECONDARY, OpenSans } from '../style/StyleBoundaryResume';
+import { OpenSans } from '../style/StyleBoundaryResume';
 
-const GridAreaContact = styled.section`
+export const GridAreaContact = styled.section`
     ${OpenSans};
 
     ${GridArea('contact')};
 
     font-size: 10pt;
-    margin-top: 16px;
+    margin-top: 8px;
+
+    @media (min-width: 687px) {
+        margin-top: 16px;
+    }
 
     p,
     a {
@@ -38,21 +42,6 @@ const GridAreaLang = styled.section`
 export const ColumnRight = () => {
     return (
         <div style={{ maxWidth: '210px' }}>
-            <GridAreaContact>
-                <p>Eugene, OR</p>
-                <a
-                    href={'tel:+15419999483'}
-                    style={{ display: 'block', color: COLOR_TEXT_SECONDARY }}
-                >
-                    (541) 999-9483
-                </a>
-                <a
-                    href={'mailto:herontnavarro@gmail.com'}
-                    style={{ display: 'block' }}
-                >
-                    herontnavarro@gmail.com
-                </a>
-            </GridAreaContact>
             <GridAreaSkills>
                 <SectionHeading>Skills</SectionHeading>
                 <ul>

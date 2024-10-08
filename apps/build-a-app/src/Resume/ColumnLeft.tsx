@@ -7,7 +7,7 @@ import {
     COLOR_TEXT_SECONDARY
 } from '../style/StyleBoundaryResume';
 
-const GridAreaTitleContainer = styled.div`
+export const GridAreaTitleContainer = styled.div`
     ${GridArea('title')};
 `;
 const GridAreaExperience = styled.section`
@@ -26,7 +26,7 @@ const GridAreaSummary = styled.section`
 
     font-weight: 600;
 `;
-const EngineerName = () => (
+export const EngineerName = () => (
     <h1 style={{ color: COLOR_TEXT_SECONDARY }}>Heron Wu-Navarro</h1>
 );
 const EngineerSummary = () => (
@@ -80,9 +80,6 @@ const EngineerExperience: React.FC<EngineerExperienceProps> = ({
 export const ColumnLeft = () => {
     return (
         <div style={{ maxWidth: '445px' }}>
-            <GridAreaTitleContainer>
-                <EngineerName />
-            </GridAreaTitleContainer>
             <GridAreaSummary>
                 <EngineerSummary />
             </GridAreaSummary>
